@@ -13,7 +13,7 @@ import urllib
 app = Flask(__name__)
 jwt = JWTManager(app)
 bcrypt = Bcrypt(app) 
-app.config["MONGO_URI"] = "mongodb+srv://vishwasganatra:Xi4DPRN2QrJDA8pP@mumbai-test-cluster.9a0isi3.mongodb.net/LitRate"
+app.config["MONGO_URI"] = ""
 app.config['JWT_SECRET_KEY'] = '38dd56f56d405e02ec0ba4be4607eaab'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=1)
 mongo = PyMongo(app)
